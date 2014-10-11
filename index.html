@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
   <div id="main">
     <h1>You're ready to use Parse!</h1>
 
@@ -29,7 +29,7 @@
 
     <div style="display:none" class="success">
       <p>We've also just created your first object using the following code:</p>
-      
+
         <code>
           var TestObject = Parse.Object.extend("TestObject");<br/>
           var testObject = new TestObject();<br/>
@@ -39,17 +39,12 @@
   </div>
 
   <script type="text/javascript">
-    Parse.initialize("APPLICATION_ID", "JAVASCRIPT_KEY");
-    
+    Parse.initialize("ZNuEcCxgi0YnItPMCYvypViR2fqewl36SSJJ9Kp4", "7gzmRdZVIKiNnyLFzqD8JqJGIdzOPjjHibAyMu8H");
+
     var TestObject = Parse.Object.extend("TestObject");
     var testObject = new TestObject();
-      testObject.save({foo: "bar"}, {
-      success: function(object) {
-        $(".success").show();
-      },
-      error: function(model, error) {
-        $(".error").show();
-      }
+    testObject.save({foo: "bar"}).then(function(object) {
+      alert("yay! it worked");
     });
   </script>
 </body>
