@@ -48,6 +48,9 @@ div#meter > div#fill {
   -moz-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
   -webkit-box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
   width: 0.1%;
+  transition: .4s all ease-out;
+  -moz-transition: .4s all ease-out;
+  -webkit-transition: .4s all ease-out;
 }
 
 div#meter > div#text {
