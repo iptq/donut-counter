@@ -1,11 +1,17 @@
 Parse.initialize("ZNuEcCxgi0YnItPMCYvypViR2fqewl36SSJJ9Kp4", "7gzmRdZVIKiNnyLFzqD8JqJGIdzOPjjHibAyMu8H");
+var goal = 1000;
 
 var Donuts = Parse.Object.extend("Donuts");
 var query = new Parse.Query(Donuts);
 setInterval(function() {
   query.get("cei4T7N4Dy", {
     success: function(donuts) {
-      console.log(donuts.get("Number"));
+      var num = parseInt(donuts.get("Number"));
+      console.log(num);
+      var percent = num * 1.0 / goal;
+      $("#fill").css("width", percent + "%");
+      var rounded = Math.round(percent * 10000) / 100.0;
+      $("#text").html(rounded + "%");
     },
     error: function(object, error) {
 
