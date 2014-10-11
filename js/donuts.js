@@ -8,9 +8,9 @@ var process = function() {
     success: function(donuts) {
       var num = parseInt(donuts.get("Number"));
       console.log(num);
-      var percent = num * 1.0 / goal;
+      var percent = num * 100.0 / goal;
       $("#fill").css("width", percent + "%");
-      var rounded = Math.round(percent * 10000) / 100.0;
+      var rounded = Math.round(percent * 100) / 100.0;
       $("#text").html(rounded + "%");
       $("#remaining").html(goal - num);
     },
