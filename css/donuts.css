@@ -62,3 +62,9 @@ div#meter > div#text {
   -moz-box-sizing: border-box;
   padding: 5px;
 }
+
+h2#label {
+  font-size: 40px;
+  margin-top: 2%;
+  font-weight: 600;
+}
