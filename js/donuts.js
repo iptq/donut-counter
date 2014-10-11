@@ -6,7 +6,7 @@ var query = new Parse.Query(Donuts);
 var process = function() {
   query.get("cei4T7N4Dy", {
     success: function(donuts) {
-      var num = parseInt(donuts.get("Number"));
+      var num = parseFloat(donuts.get("Number"));
       console.log(num);
       var percent = num * 100.0 / goal;
       $("#fill").css("width", percent + "%");
