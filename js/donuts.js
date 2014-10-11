@@ -12,6 +12,7 @@ var process = function() {
       $("#fill").css("width", percent + "%");
       var rounded = Math.round(percent * 10000) / 100.0;
       $("#text").html(rounded + "%");
+      $("#remaining").html(goal - num);
     },
     error: function(object, error) {
 
