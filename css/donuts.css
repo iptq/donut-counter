@@ -64,7 +64,15 @@ div#meter > div#text {
 }
 
 h2#label {
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 2%;
   font-weight: 600;
+}
+
+h2#label > span#remaining {
+  color: #00F;
+}
+
+h2#label > span#special {
+  color: #CC6;
 }
