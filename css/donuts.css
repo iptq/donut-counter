@@ -1,0 +1,10 @@
+body {
+  margin: 0 0;
+  background-color: #ECF0F1;
+  font-family: "Open Sans", sans-serif;
+}
+
+#wrapper {
+  margin-top: 13%;
+  text-align: center;
+}
