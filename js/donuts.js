@@ -3,7 +3,7 @@ var goal = 1000;
 
 var Donuts = Parse.Object.extend("Donuts");
 var query = new Parse.Query(Donuts);
-setInterval(function() {
+var process = function() {
   query.get("cei4T7N4Dy", {
     success: function(donuts) {
       var num = parseInt(donuts.get("Number"));
@@ -17,4 +17,6 @@ setInterval(function() {
 
     }
   });
-}, 1000*60*60);
+};
+setInterval(process, 1000*60*60);
+process();
