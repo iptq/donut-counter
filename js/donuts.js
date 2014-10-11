@@ -1,5 +1,5 @@
 Parse.initialize("ZNuEcCxgi0YnItPMCYvypViR2fqewl36SSJJ9Kp4", "7gzmRdZVIKiNnyLFzqD8JqJGIdzOPjjHibAyMu8H");
-var goal = 1000;
+var goal = 1500;
 
 var Donuts = Parse.Object.extend("Donuts");
 var query = new Parse.Query(Donuts);
