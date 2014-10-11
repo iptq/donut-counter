@@ -11,12 +11,11 @@ body {
 
 h1#title {
   font-size: 120px;
-  margin-bottom: 0px;
+  margin-bottom: 2%;
   font-weight: 700;
 }
 
 div#meter {
-  margin-top: 2%;
   width: 75%;
   position: relative;
   background: #555;
@@ -27,4 +26,18 @@ div#meter {
   -moz-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
   margin: auto;
+}
+
+div#meter > div#fill {
+  display: block;
+  height: 100%;
+  background-color: rgb(48, 194, 83);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-border-top-left-radius: 20px;
+  -moz-border-bottom-left-radius: 20px;
+  -moz-border-top-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
 }
